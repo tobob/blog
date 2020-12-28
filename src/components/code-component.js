@@ -1,13 +1,18 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
+import Gist from "super-react-gist";
 
-const CodeComponent = () => <div><span></span></div>
+const CodeComponent = ({ url }) => (
+  <Gist url={url} />
+);
 
-export default CodeComponent
+export default CodeComponent;
+
+export const modelName = "ContentfulCodeComponent";
 
 export const query = graphql`
   fragment CodeComponentFragment on ContentfulCodeComponent {
     url
     __typename
   }
-`
+`;
