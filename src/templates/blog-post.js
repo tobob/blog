@@ -32,11 +32,7 @@ class BlogPostTemplate extends React.Component {
             case WallOfTextComponentModelName:
               return <WallOfTextComponent {...reference} />;
             default:
-              return (
-                <span>
-                  Nie ma {reference.__typename} {WallOfTextComponentModelName}
-                </span>
-              );
+              return null;
           }
         });
       }
