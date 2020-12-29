@@ -1,1 +1,1 @@
-# Contentful Gatsby Modular Components Proff of Concept
+# Contentful Gatsby Modular Components Proof of Concept
