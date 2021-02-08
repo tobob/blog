@@ -58,6 +58,11 @@ module.exports = {
         theme_color: `#a2466c`,
         display: `standalone`,
         icon: `src/images/goal.png`,
+        icon_options: {
+          // For all the options available,
+          // please see the section "Additional Resources" below.
+          purpose: `any maskable`,
+        },
       },
     },
     `gatsby-plugin-offline`,
